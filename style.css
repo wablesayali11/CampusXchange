@@ -1,6 +1,12 @@
-/* ================================
-   CAMPUSXCHANGE - PASTEL THEME
-================================ */
+/* =========================================
+   CAMPUSXCHANGE - DAY 3
+   Pastel Purple + Soft Blue Theme
+========================================= */
+
+
+/* =========================================
+   RESET & VARIABLES
+========================================= */
 
 * {
     margin: 0;
@@ -10,29 +16,32 @@
 
 :root {
     --purple: #4B2A87;
+    --purple-light: #8C6BB1;
     --lavender: #B9A8C5;
     --pastel-blue: #AEB8E3;
     --light: #F7F5F8;
     --white: #FFFFFF;
     --dark: #292536;
     --text: #514B5B;
+    --border: #E4DDE9;
 }
 
 
-/* ================================
+/* =========================================
    BODY
-================================ */
+========================================= */
 
 body {
     font-family: Arial, sans-serif;
     background-color: var(--light);
     color: var(--text);
+    line-height: 1.5;
 }
 
 
-/* ================================
+/* =========================================
    HEADER
-================================ */
+========================================= */
 
 header {
     background: linear-gradient(
@@ -42,262 +51,66 @@ header {
     );
 
     color: var(--purple);
+
     text-align: center;
-    padding: 35px 20px;
+
+    padding: 30px 20px;
 }
 
-header h1 {
-    font-size: 42px;
-    margin-bottom: 8px;
+.logo {
+    font-size: 32px;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
+.logo span {
+    color: var(--purple-light);
+}
+
 header p {
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 
-/* ================================
-   NAVIGATION BAR
-================================ */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 nav {
     background-color: var(--white);
-    padding: 18px;
-    text-align: center;
 
-    box-shadow: 0 2px 10px rgba(75, 42, 135, 0.08);
+    padding: 16px 20px;
+
+    box-shadow: 0 3px 12px rgba(75, 42, 135, 0.08);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
 }
-
-nav a {
-    color: var(--purple);
-    text-decoration: none;
-    margin: 0 18px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #8C6BB1;
-}
-
-
-/* ================================
-   HERO SECTION
-================================ */
-
-.hero {
-    min-height: 430px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 60px 20px;
-
-    background: linear-gradient(
-        135deg,
-        #C5B4CA,
-        #B6BDE2,
-        #F7F5F8
-    );
-}
-
-.hero h2 {
-    font-size: 35px;
-    max-width: 750px;
-    color: var(--purple);
-    margin-bottom: 18px;
-}
-
-.hero p {
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.7;
-    color: var(--text);
-    margin-bottom: 28px;
-}
-
-
-/* ================================
-   BUTTONS
-================================ */
-
-button {
-    background-color: var(--purple);
-    color: var(--white);
-
-    border: none;
-    padding: 13px 25px;
-
-    margin: 5px;
-
-    border-radius: 25px;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #6A48A0;
-    transform: translateY(-2px);
-}
-
-
-/* ================================
-   CATEGORIES
-================================ */
-
-.categories {
-    padding: 70px 8%;
-    text-align: center;
-    background-color: var(--light);
-}
-
-.categories h2 {
-    color: var(--purple);
-    font-size: 30px;
-    margin-bottom: 35px;
-}
-
-
-/* ================================
-   CATEGORY CONTAINER
-================================ */
-
-.category-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-}
-
-
-/* ================================
-   CATEGORY CARDS
-================================ */
-
-.category-card {
-    background-color: var(--white);
-
-    width: 220px;
-
-    padding: 30px 20px;
-
-    border-radius: 18px;
-
-    border: 1px solid #E4DDE9;
-
-    box-shadow: 0 8px 25px rgba(75, 42, 135, 0.08);
-
-    transition: 0.3s;
-}
-
-.category-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow: 0 15px 30px rgba(75, 42, 135, 0.15);
-
-    border-color: var(--lavender);
-}
-
-.category-card h3 {
-    color: var(--purple);
-    margin-bottom: 12px;
-    font-size: 20px;
-}
-
-.category-card p {
-    color: var(--text);
-    line-height: 1.5;
-}
-/* ================================
-   FOOTER
-================================ */
-
-footer {
-    background-color: var(--dark);
-
-    color: var(--white);
-
-    text-align: center;
-
-    padding: 25px;
-
-    margin-top: 30px;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
-
-@media (max-width: 768px) {
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 8px;
-    }
-
-    .category-card {
-        width: 90%;
-        max-width: 320px;
-    }
-}
-/* ================================
-   CAMPUSXCHANGE LOGO
-================================ */
-
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--purple);
-}
-
-.logo span {
-    color: #8C6BB1;
-}
-
-
-/* ================================
-   NAVIGATION UPDATE
-================================ */
 
 .nav-container {
     max-width: 1200px;
+
     margin: auto;
 
     display: flex;
-    align-items: center;
+
     justify-content: center;
 
-    gap: 30px;
+    align-items: center;
+
+    gap: 28px;
 }
 
 .nav-container a {
     color: var(--text);
+
     text-decoration: none;
+
+    font-size: 15px;
+
     font-weight: 600;
 
     transition: 0.3s;
@@ -309,75 +122,74 @@ footer p {
 }
 
 
-/* LOGIN BUTTON */
+/* Login Button */
 
 .nav-container .login-btn {
     background-color: var(--purple);
-    color: white;
 
-    padding: 10px 22px;
+    color: var(--white);
+
+    padding: 9px 20px;
 
     border-radius: 25px;
 }
 
 .nav-container .login-btn:hover {
-    background-color: #6A48A0;
-    color: white;
+    background-color: var(--purple-light);
+
+    color: var(--white);
 }
 
 
-/* ================================
-   NEW HERO
-================================ */
+/* =========================================
+   HERO SECTION
+========================================= */
 
 .hero {
     min-height: 560px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
 
     padding: 80px 20px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #C9B7CE,
-            #B8BFE3,
-            #F7F5F8
-        );
+    background: linear-gradient(
+        135deg,
+        #C9B7CE,
+        #B8BFE3,
+        #F7F5F8
+    );
 }
 
-
-/* SMALL TITLE */
+.hero-content {
+    max-width: 900px;
+}
 
 .hero-small-title {
     color: var(--purple);
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: 700;
 
     letter-spacing: 3px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
-
-/* MAIN HEADING */
-
 .hero h1 {
-    max-width: 850px;
-
     font-size: 58px;
 
     line-height: 1.15;
 
     color: var(--dark);
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .hero h1 span {
@@ -386,27 +198,22 @@ footer p {
     color: var(--purple);
 }
 
-
-/* DESCRIPTION */
-
 .hero-description {
     max-width: 650px;
 
-    margin: auto;
+    margin: 0 auto 30px;
 
     font-size: 18px;
 
     line-height: 1.7;
 
     color: var(--text);
-
-    margin-bottom: 30px;
 }
 
 
-/* ================================
+/* =========================================
    HERO BUTTONS
-================================ */
+========================================= */
 
 .hero-buttons {
     display: flex;
@@ -416,10 +223,9 @@ footer p {
     gap: 12px;
 }
 
-
 .primary-btn,
 .secondary-btn {
-    padding: 14px 28px;
+    padding: 13px 26px;
 
     border-radius: 30px;
 
@@ -433,24 +239,26 @@ footer p {
 }
 
 
-/* PRIMARY */
+/* Primary */
 
 .primary-btn {
     background-color: var(--purple);
 
-    color: white;
+    color: var(--white);
 
     border: 2px solid var(--purple);
 }
 
 .primary-btn:hover {
-    background-color: #6A48A0;
+    background-color: var(--purple-light);
+
+    border-color: var(--purple-light);
 
     transform: translateY(-3px);
 }
 
 
-/* SECONDARY */
+/* Secondary */
 
 .secondary-btn {
     background-color: transparent;
@@ -463,26 +271,394 @@ footer p {
 .secondary-btn:hover {
     background-color: var(--purple);
 
-    color: white;
+    color: var(--white);
 
     transform: translateY(-3px);
 }
 
 
-/* ================================
-   RESPONSIVE NAVBAR + HERO
-================================ */
+/* =========================================
+   COMMON SECTION STYLES
+========================================= */
 
-@media (max-width: 768px) {
+.section-subtitle {
+    color: var(--purple-light);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-description {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: var(--light);
+}
+
+.categories h2,
+.featured h2 {
+    color: var(--purple);
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Category Grid */
+
+.category-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Category Card */
+
+.category-card {
+    background-color: var(--white);
+
+    padding: 30px 22px;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 8px 25px rgba(75, 42, 135, 0.07);
+
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--lavender);
+
+    box-shadow:
+        0 15px 30px rgba(75, 42, 135, 0.14);
+}
+
+
+/* Category Icon */
+
+.category-icon {
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #EEE8F1;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+.category-card h3 {
+    color: var(--purple);
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.category-card p {
+    color: var(--text);
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+.category-card a {
+    color: var(--purple-light);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.category-card a:hover {
+    color: var(--purple);
+}
+
+
+/* =========================================
+   FEATURED PRODUCTS
+========================================= */
+
+.featured {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: var(--white);
+}
+
+
+/* Product Grid */
+
+.product-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    box-shadow:
+        0 8px 25px rgba(75, 42, 135, 0.07);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(75, 42, 135, 0.14);
+}
+
+
+/* Product Image */
+
+.product-image {
+    height: 180px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 65px;
+
+    background: linear-gradient(
+        135deg,
+        #D4C5D8,
+        #BEC5E5
+    );
+}
+
+
+/* Product Information */
+
+.product-info {
+    padding: 22px;
+}
+
+.product-category {
+    display: inline-block;
+
+    background-color: #EEE8F1;
+
+    color: var(--purple);
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.product-info h3 {
+    color: var(--dark);
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* Product Bottom */
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.product-bottom strong {
+    color: var(--purple);
+
+    font-size: 21px;
+}
+
+.product-bottom button {
+    background-color: var(--purple);
+
+    color: var(--white);
+
+    border: none;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.product-bottom button:hover {
+    background-color: var(--purple-light);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
 
     .nav-container {
+        gap: 16px;
         flex-wrap: wrap;
-
-        gap: 15px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 45px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
     }
 
     .hero-description {
@@ -495,4 +671,30 @@ footer p {
         align-items: center;
     }
 
+    .primary-btn,
+    .secondary-btn {
+        width: 220px;
+    }
+
+    .categories,
+    .featured {
+        padding: 60px 20px;
+    }
+
+    .categories h2,
+    .featured h2 {
+        font-size: 28px;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        width: 100%;
+    }
 }
