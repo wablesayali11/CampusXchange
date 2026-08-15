@@ -698,3 +698,203 @@ footer p {
         width: 100%;
     }
 }
+/* =========================================
+   SELL ITEM SECTION
+========================================= */
+
+.sell-section {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7F5F8,
+            #E9E4F0
+        );
+}
+
+
+/* Sell Header */
+
+.sell-header {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+}
+
+.sell-header h2 {
+    color: var(--purple);
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.sell-header p:last-child {
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+/* Form Container */
+
+.sell-form-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    background-color: var(--white);
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 12px 35px rgba(75, 42, 135, 0.10);
+}
+
+
+/* Form */
+
+.sell-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* Full Width */
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* Labels */
+
+.form-group label {
+    color: var(--dark);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: #FCFBFD;
+
+    color: var(--text);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--purple-light);
+
+    background-color: var(--white);
+
+    box-shadow:
+        0 0 0 3px rgba(140, 107, 177, 0.12);
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* File Input */
+
+.form-group input[type="file"] {
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+
+/* Submit */
+
+.form-submit {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.form-submit button {
+    min-width: 200px;
+}
+
+
+/* =========================================
+   SELL FORM RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .sell-section {
+        padding: 60px 20px;
+    }
+
+    .sell-form-container {
+        padding: 25px 20px;
+    }
+
+    .sell-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .form-submit {
+        grid-column: auto;
+    }
+
+}

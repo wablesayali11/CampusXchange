@@ -437,10 +437,241 @@
 
     </section>
 
-
     <!-- =========================
          FOOTER
     ========================== -->
+    <!-- =========================
+     SELL ITEM SECTION
+========================== -->
+
+<section class="sell-section" id="sell">
+
+    <div class="sell-header">
+
+        <p class="section-subtitle">
+            SELL WITH CAMPUSXCHANGE
+        </p>
+
+        <h2>
+            Sell Your Item
+        </h2>
+
+        <p>
+            Have something you no longer need?
+            List it and help another student find it.
+        </p>
+
+    </div>
+
+
+    <div class="sell-form-container">
+
+        <form class="sell-form">
+
+            <!-- Product Name -->
+
+            <div class="form-group">
+
+                <label for="product-name">
+                    Product Name
+                </label>
+
+                <input
+                    type="text"
+                    id="product-name"
+                    placeholder="Enter product name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select id="category" required>
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="books">
+                        Books
+                    </option>
+
+                    <option value="electronics">
+                        Electronics
+                    </option>
+
+                    <option value="calculators">
+                        Calculators
+                    </option>
+
+                    <option value="cycles">
+                        Cycles
+                    </option>
+
+                    <option value="accessories">
+                        Accessories
+                    </option>
+
+                    <option value="others">
+                        Others
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Price -->
+
+            <div class="form-group">
+
+                <label for="price">
+                    Price
+                </label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter price in ₹"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Condition -->
+
+            <div class="form-group">
+
+                <label for="condition">
+                    Product Condition
+                </label>
+
+                <select id="condition" required>
+
+                    <option value="">
+                        Select Condition
+                    </option>
+
+                    <option value="new">
+                        New
+                    </option>
+
+                    <option value="like-new">
+                        Like New
+                    </option>
+
+                    <option value="good">
+                        Good
+                    </option>
+
+                    <option value="used">
+                        Used
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Seller Name -->
+
+            <div class="form-group">
+
+                <label for="seller">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="seller"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="form-group">
+
+                <label for="contact">
+                    Contact Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="contact"
+                    placeholder="Enter contact number"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Description -->
+
+            <div class="form-group full-width">
+
+                <label for="description">
+                    Product Description
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Describe your item..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- Image -->
+
+            <div class="form-group full-width">
+
+                <label for="image">
+                    Product Image
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <div class="form-submit">
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    List My Item →
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
 
     <footer>
 
