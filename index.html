@@ -256,178 +256,123 @@
     </section>
 
 
+   <!-- =========================
+     FEATURED PRODUCTS
+========================== -->
+
+<section class="featured" id="explore">
+
+    <p class="section-subtitle">
+        POPULAR LISTINGS
+    </p>
+
+    <h2>
+        Featured Items
+    </h2>
+
+    <p class="section-description">
+        Check out some useful items listed by students.
+    </p>
+
+
     <!-- =========================
-         FEATURED PRODUCTS
+         SEARCH & FILTER
     ========================== -->
 
-    <section class="featured" id="explore">
+    <div class="product-controls">
 
-        <p class="section-subtitle">
-            POPULAR LISTINGS
-        </p>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
 
-        <h2>
-            Featured Items
-        </h2>
+        <select id="categoryFilter">
 
-        <p class="section-description">
-            Check out some useful items listed by students.
-        </p>
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="books">
+                Books
+            </option>
+
+            <option value="calculator">
+                Calculator
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="accessories">
+                Accessories
+            </option>
+
+        </select>
+
+        <button
+            id="resetFilter"
+            type="button"
+        >
+            Reset
+        </button>
+
+    </div>
 
 
-        <div class="product-container">
+    <!-- Result Count -->
+
+    <p
+        id="resultCount"
+        class="result-count"
+    >
+        Showing all products
+    </p>
 
 
-            <!-- PRODUCT 1 -->
+    <!-- =========================
+         PRODUCT CONTAINER
+    ========================== -->
 
-            <div class="product-card">
+    <div class="product-container">
 
-                <div class="product-image">
-                    📚
-                </div>
 
-                <div class="product-info">
+        <!-- PRODUCT 1 -->
 
-                    <span class="product-category">
-                        Books
-                    </span>
+        <div
+            class="product-card"
+            data-category="books"
+        >
 
-                    <h3>
-                        Java DSA Book
-                    </h3>
-
-                    <p>
-                        Complete DSA reference book for engineering students.
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ₹250
-                        </strong>
-
-                        <button>
-                            View Details
-                        </button>
-
-                    </div>
-
-                </div>
-
+            <div class="product-image">
+                📚
             </div>
 
+            <div class="product-info">
 
-            <!-- PRODUCT 2 -->
+                <span class="product-category">
+                    Books
+                </span>
 
-            <div class="product-card">
+                <h3>
+                    Java DSA Book
+                </h3>
 
-                <div class="product-image">
-                    🧮
-                </div>
+                <p>
+                    Complete DSA reference book for
+                    engineering students.
+                </p>
 
-                <div class="product-info">
+                <div class="product-bottom">
 
-                    <span class="product-category">
-                        Calculator
-                    </span>
+                    <strong>
+                        ₹250
+                    </strong>
 
-                    <h3>
-                        Scientific Calculator
-                    </h3>
-
-                    <p>
-                        Good condition calculator for engineering students.
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ₹500
-                        </strong>
-
-                        <button>
-                            View Details
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 3 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    🎧
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Electronics
-                    </span>
-
-                    <h3>
-                        Wireless Headphones
-                    </h3>
-
-                    <p>
-                        Lightly used wireless headphones in good condition.
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ₹800
-                        </strong>
-
-                        <button>
-                            View Details
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 4 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    🎒
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Accessories
-                    </span>
-
-                    <h3>
-                        College Backpack
-                    </h3>
-
-                    <p>
-                        Spacious backpack suitable for daily college use.
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ₹450
-                        </strong>
-
-                        <button>
-                            View Details
-                        </button>
-
-                    </div>
+                    <button>
+                        View Details
+                    </button>
 
                 </div>
 
@@ -435,8 +380,139 @@
 
         </div>
 
-    </section>
 
+        <!-- PRODUCT 2 -->
+
+        <div
+            class="product-card"
+            data-category="calculator"
+        >
+
+            <div class="product-image">
+                🧮
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Calculator
+                </span>
+
+                <h3>
+                    Scientific Calculator
+                </h3>
+
+                <p>
+                    Good condition calculator for
+                    engineering students.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹500
+                    </strong>
+
+                    <button>
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div
+            class="product-card"
+            data-category="electronics"
+        >
+
+            <div class="product-image">
+                🎧
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Electronics
+                </span>
+
+                <h3>
+                    Wireless Headphones
+                </h3>
+
+                <p>
+                    Lightly used wireless headphones
+                    in good condition.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹800
+                    </strong>
+
+                    <button>
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div
+            class="product-card"
+            data-category="accessories"
+        >
+
+            <div class="product-image">
+                🎒
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Accessories
+                </span>
+
+                <h3>
+                    College Backpack
+                </h3>
+
+                <p>
+                    Spacious backpack suitable for
+                    daily college use.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹450
+                    </strong>
+
+                    <button>
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
     <!-- =========================
          FOOTER
     ========================== -->

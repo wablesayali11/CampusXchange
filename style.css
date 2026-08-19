@@ -2430,3 +2430,95 @@ footer p {
     }
 
 }
+/* =========================================
+   SEARCH & FILTER CONTROLS
+========================================= */
+
+.product-controls {
+    max-width: 900px;
+
+    margin: 30px auto 15px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 200px 100px;
+
+    gap: 12px;
+}
+
+
+.product-controls input,
+.product-controls select {
+    padding: 13px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background-color: var(--white);
+
+    color: var(--text);
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.product-controls input:focus,
+.product-controls select:focus {
+    border-color: var(--purple-light);
+
+    box-shadow:
+        0 0 0 3px rgba(140, 107, 177, 0.12);
+}
+
+
+#resetFilter {
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--purple);
+
+    color: var(--white);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#resetFilter:hover {
+    background-color: var(--purple-light);
+
+    transform: translateY(-2px);
+}
+
+
+.result-count {
+    text-align: center;
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .product-controls {
+        grid-template-columns: 1fr;
+    }
+
+    #resetFilter {
+        padding: 12px;
+    }
+
+}
