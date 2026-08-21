@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>CampusXchange | Student Marketplace</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          HEADER
@@ -22,9 +28,12 @@
             <span>Campus</span>Xchange
         </div>
 
-        <p>Buy • Sell • Exchange • Save</p>
+        <p>
+            Buy • Sell • Exchange • Save
+        </p>
 
     </header>
+
 
 
     <!-- =========================
@@ -35,21 +44,34 @@
 
         <div class="nav-container">
 
-            <a href="#" class="active">Home</a>
+            <a href="#" class="active">
+                Home
+            </a>
 
-            <a href="#explore">Explore</a>
+            <a href="#explore">
+                Explore
+            </a>
 
-            <a href="#categories">Categories</a>
+            <a href="#categories">
+                Categories
+            </a>
 
-            <a href="#sell">Sell Item</a>
+            <a href="#sell">
+                Sell Item
+            </a>
 
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+                Contact
+            </a>
 
-            <a href="#" class="login-btn">Login</a>
+            <a href="#login" class="login-btn">
+                Login
+            </a>
 
         </div>
 
     </nav>
+
 
 
     <!-- =========================
@@ -65,25 +87,35 @@
             </p>
 
             <h1>
+
                 Buy, Sell & Exchange
-                <span>Within Your Campus.</span>
+
+                <span>
+                    Within Your Campus.
+                </span>
+
             </h1>
 
             <p class="hero-description">
+
                 A simple marketplace where students can
                 discover useful items, sell what they no longer
                 need, and save money together.
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <button class="primary-btn">
+                <a href="#explore"
+                   class="primary-btn">
                     Explore Items →
-                </button>
+                </a>
 
-                <button class="secondary-btn">
+                <a href="#sell"
+                   class="secondary-btn">
                     Sell an Item
-                </button>
+                </a>
 
             </div>
 
@@ -92,11 +124,13 @@
     </section>
 
 
+
     <!-- =========================
          CATEGORIES SECTION
     ========================== -->
 
-    <section class="categories" id="categories">
+    <section class="categories"
+             id="categories">
 
         <p class="section-subtitle">
             EXPLORE CAMPUSXCHANGE
@@ -107,14 +141,17 @@
         </h2>
 
         <p class="section-description">
-            Find useful items from students around your campus.
+
+            Find useful items from students
+            around your campus.
+
         </p>
 
 
         <div class="category-container">
 
 
-            <!-- Books -->
+            <!-- BOOKS -->
 
             <div class="category-card">
 
@@ -127,17 +164,19 @@
                 </h3>
 
                 <p>
-                    Academic books, notes and study materials.
+                    Academic books, notes and
+                    study materials.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
             </div>
 
 
-            <!-- Electronics -->
+
+            <!-- ELECTRONICS -->
 
             <div class="category-card">
 
@@ -150,17 +189,19 @@
                 </h3>
 
                 <p>
-                    Laptops, headphones and useful devices.
+                    Laptops, headphones and
+                    useful devices.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
             </div>
 
 
-            <!-- Calculators -->
+
+            <!-- CALCULATORS -->
 
             <div class="category-card">
 
@@ -173,17 +214,19 @@
                 </h3>
 
                 <p>
-                    Scientific calculators and study tools.
+                    Scientific calculators and
+                    study tools.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
             </div>
 
 
-            <!-- Cycles -->
+
+            <!-- CYCLES -->
 
             <div class="category-card">
 
@@ -196,17 +239,19 @@
                 </h3>
 
                 <p>
-                    Buy and sell cycles within your campus.
+                    Buy and sell cycles within
+                    your campus.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
             </div>
 
 
-            <!-- Accessories -->
+
+            <!-- ACCESSORIES -->
 
             <div class="category-card">
 
@@ -219,17 +264,19 @@
                 </h3>
 
                 <p>
-                    Bags, bottles and everyday college items.
+                    Bags, bottles and everyday
+                    college items.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
             </div>
 
 
-            <!-- Others -->
+
+            <!-- OTHERS -->
 
             <div class="category-card">
 
@@ -242,10 +289,11 @@
                 </h3>
 
                 <p>
-                    Discover other useful student items.
+                    Discover other useful
+                    student items.
                 </p>
 
-                <a href="#">
+                <a href="#explore">
                     Explore →
                 </a>
 
@@ -256,1557 +304,1778 @@
     </section>
 
 
-   <!-- =========================
-     FEATURED PRODUCTS
-========================== -->
-
-<section class="featured" id="explore">
-
-    <p class="section-subtitle">
-        POPULAR LISTINGS
-    </p>
-
-    <h2>
-        Featured Items
-    </h2>
-
-    <p class="section-description">
-        Check out some useful items listed by students.
-    </p>
-
 
     <!-- =========================
-         SEARCH & FILTER
+         FEATURED PRODUCTS
     ========================== -->
 
-    <div class="product-controls">
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search products..."
-        >
-
-        <select id="categoryFilter">
-
-            <option value="all">
-                All Categories
-            </option>
-
-            <option value="books">
-                Books
-            </option>
-
-            <option value="calculator">
-                Calculator
-            </option>
-
-            <option value="electronics">
-                Electronics
-            </option>
-
-            <option value="accessories">
-                Accessories
-            </option>
-
-        </select>
-
-        <button
-            id="resetFilter"
-            type="button"
-        >
-            Reset
-        </button>
-
-    </div>
-
-
-    <!-- Result Count -->
-
-    <p
-        id="resultCount"
-        class="result-count"
-    >
-        Showing all products
-    </p>
-
-
-    <!-- =========================
-         PRODUCT CONTAINER
-    ========================== -->
-
-    <div class="product-container">
-
-
-        <!-- PRODUCT 1 -->
-
-        <div
-            class="product-card"
-            data-category="books"
-        >
-
-            <div class="product-image">
-                📚
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    Books
-                </span>
-
-                <h3>
-                    Java DSA Book
-                </h3>
-
-                <p>
-                    Complete DSA reference book for
-                    engineering students.
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        ₹250
-                    </strong>
-
-                    <button>
-                        View Details
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 2 -->
-
-        <div
-            class="product-card"
-            data-category="calculator"
-        >
-
-            <div class="product-image">
-                🧮
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    Calculator
-                </span>
-
-                <h3>
-                    Scientific Calculator
-                </h3>
-
-                <p>
-                    Good condition calculator for
-                    engineering students.
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        ₹500
-                    </strong>
-
-                    <button>
-                        View Details
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 3 -->
-
-        <div
-            class="product-card"
-            data-category="electronics"
-        >
-
-            <div class="product-image">
-                🎧
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    Electronics
-                </span>
-
-                <h3>
-                    Wireless Headphones
-                </h3>
-
-                <p>
-                    Lightly used wireless headphones
-                    in good condition.
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        ₹800
-                    </strong>
-
-                    <button>
-                        View Details
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 4 -->
-
-        <div
-            class="product-card"
-            data-category="accessories"
-        >
-
-            <div class="product-image">
-                🎒
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    Accessories
-                </span>
-
-                <h3>
-                    College Backpack
-                </h3>
-
-                <p>
-                    Spacious backpack suitable for
-                    daily college use.
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        ₹450
-                    </strong>
-
-                    <button>
-                        View Details
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-    <!-- =========================
-     SELL ITEM SECTION
-========================== -->
-
-<section class="sell-section" id="sell">
-
-    <div class="sell-header">
+    <section class="featured"
+             id="explore">
 
         <p class="section-subtitle">
-            SELL WITH CAMPUSXCHANGE
+            POPULAR LISTINGS
         </p>
 
         <h2>
-            Sell Your Item
+            Featured Items
         </h2>
 
-        <p>
-            Have something you no longer need?
-            List it and help another student find it.
+        <p class="section-description">
+
+            Check out some useful items
+            listed by students.
+
         </p>
 
-    </div>
 
 
-    <div class="sell-form-container">
+        <!-- SEARCH & FILTER -->
 
-        <form class="sell-form" id="sellForm">
+        <div class="product-controls">
 
-            <!-- Product Name -->
 
-            <div class="form-group">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
 
-                <label for="product-name">
-                    Product Name
-                </label>
 
-                <input
-                    type="text"
-                    id="product-name"
-                    placeholder="Enter product name"
-                    required
-                >
+            <select id="categoryFilter">
 
-            </div>
+                <option value="all">
+                    All Categories
+                </option>
 
+                <option value="books">
+                    Books
+                </option>
 
-            <!-- Category -->
+                <option value="electronics">
+                    Electronics
+                </option>
 
-            <div class="form-group">
+                <option value="calculator">
+                    Calculators
+                </option>
 
-                <label for="category">
-                    Category
-                </label>
+                <option value="cycles">
+                    Cycles
+                </option>
 
-                <select id="category" required>
+                <option value="accessories">
+                    Accessories
+                </option>
 
-                    <option value="">
-                        Select Category
-                    </option>
+                <option value="others">
+                    Others
+                </option>
 
-                    <option value="books">
-                        Books
-                    </option>
+            </select>
 
-                    <option value="electronics">
-                        Electronics
-                    </option>
 
-                    <option value="calculators">
-                        Calculators
-                    </option>
+            <button
+                id="resetFilter"
+                type="button">
 
-                    <option value="cycles">
-                        Cycles
-                    </option>
+                Reset
 
-                    <option value="accessories">
-                        Accessories
-                    </option>
-
-                    <option value="others">
-                        Others
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <!-- Price -->
-
-            <div class="form-group">
-
-                <label for="price">
-                    Price
-                </label>
-
-                <input
-                    type="number"
-                    id="price"
-                    placeholder="Enter price in ₹"
-                    min="0"
-                    required
-                >
-
-            </div>
-
-
-            <!-- Condition -->
-
-            <div class="form-group">
-
-                <label for="condition">
-                    Product Condition
-                </label>
-
-                <select id="condition" required>
-
-                    <option value="">
-                        Select Condition
-                    </option>
-
-                    <option value="new">
-                        New
-                    </option>
-
-                    <option value="like-new">
-                        Like New
-                    </option>
-
-                    <option value="good">
-                        Good
-                    </option>
-
-                    <option value="used">
-                        Used
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <!-- Seller Name -->
-
-            <div class="form-group">
-
-                <label for="seller">
-                    Your Name
-                </label>
-
-                <input
-                    type="text"
-                    id="seller"
-                    placeholder="Enter your name"
-                    required
-                >
-
-            </div>
-
-
-            <!-- Contact -->
-
-            <div class="form-group">
-
-                <label for="contact">
-                    Contact Number
-                </label>
-
-                <input
-                    type="tel"
-                    id="contact"
-                    placeholder="Enter contact number"
-                    required
-                >
-
-            </div>
-
-
-            <!-- Description -->
-
-            <div class="form-group full-width">
-
-                <label for="description">
-                    Product Description
-                </label>
-
-                <textarea
-                    id="description"
-                    rows="5"
-                    placeholder="Describe your item..."
-                    required
-                ></textarea>
-
-            </div>
-
-
-            <!-- Image -->
-
-            <div class="form-group full-width">
-
-                <label for="image">
-                    Product Image
-                </label>
-
-                <input
-                    type="file"
-                    id="image"
-                    accept="image/*"
-                >
-
-            </div>
-
-
-            <!-- Submit -->
-
-            <div class="form-submit">
-
-                <button
-                    type="submit"
-                    class="primary-btn"
-                >
-                    List My Item →
-                </button>
-
-            </div>
-
-        </form>
-
-    </div>
-
-</section>
-<!-- =========================
-     PRODUCT DETAILS SECTION
-========================== -->
-
-<section class="product-details" id="details">
-
-    <div class="details-container">
-
-        <!-- Product Image -->
-
-        <div class="details-image">
-
-            <div class="large-product-icon">
-                📚
-            </div>
-
-            <button class="save-btn">
-                ♡ Save Item
             </button>
 
         </div>
 
 
-        <!-- Product Information -->
 
-        <div class="details-info">
+        <!-- RESULT COUNT -->
 
-            <span class="details-category">
-                Books
-            </span>
+        <p
+            id="resultCount"
+            class="result-count">
 
-            <h2>
-                Java DSA Complete Guide
-            </h2>
+            Showing all products
 
-            <div class="details-price">
-                ₹350
-            </div>
+        </p>
 
 
-            <!-- Product Condition -->
 
-            <div class="condition-box">
+        <!-- PRODUCT CONTAINER -->
 
-                <span>
-                    Condition
-                </span>
-
-                <strong>
-                    Like New
-                </strong>
-
-            </div>
+        <div class="product-container">
 
 
-            <!-- Description -->
+            <!-- PRODUCT 1 -->
 
-            <h3>
-                About this item
-            </h3>
+            <div class="product-card"
+                 data-category="books">
 
-            <p class="details-description">
-
-                A useful Java and Data Structures book
-                for engineering students. It contains
-                concepts, examples and practice questions
-                suitable for beginners.
-
-            </p>
-
-
-            <!-- Seller -->
-
-            <div class="seller-card">
-
-                <div class="seller-avatar">
-                    👤
+                <div class="product-image">
+                    📚
                 </div>
 
-                <div class="seller-info">
+                <div class="product-info">
 
-                    <span>
-                        Listed by
+                    <span class="product-category">
+                        Books
                     </span>
 
-                    <strong>
-                        Student Seller
-                    </strong>
+                    <h3>
+                        Java DSA Book
+                    </h3>
 
-                    <small>
-                        Engineering Student
-                    </small>
+                    <p>
+                        Complete DSA reference book
+                        for engineering students.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹250
+                        </strong>
+
+                        <button type="button">
+                            View Details
+                        </button>
+
+                    </div>
 
                 </div>
 
             </div>
 
 
-            <!-- Buttons -->
 
-            <div class="contact-buttons">
+            <!-- PRODUCT 2 -->
 
-                <button class="contact-btn">
-                    📞 Contact Seller
-                </button>
+            <div class="product-card"
+                 data-category="calculator">
 
-                <button class="message-btn">
-                    💬 Message Seller
-                </button>
+                <div class="product-image">
+                    🧮
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Calculators
+                    </span>
+
+                    <h3>
+                        Scientific Calculator
+                    </h3>
+
+                    <p>
+                        Good condition calculator
+                        for engineering students.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹500
+                        </strong>
+
+                        <button type="button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card"
+                 data-category="electronics">
+
+                <div class="product-image">
+                    🎧
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>
+                        Wireless Headphones
+                    </h3>
+
+                    <p>
+                        Lightly used wireless headphones
+                        in good condition.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹800
+                        </strong>
+
+                        <button type="button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card"
+                 data-category="accessories">
+
+                <div class="product-image">
+                    🎒
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Accessories
+                    </span>
+
+                    <h3>
+                        College Backpack
+                    </h3>
+
+                    <p>
+                        Spacious backpack suitable
+                        for daily college use.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹450
+                        </strong>
+
+                        <button type="button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-<!-- =========================
-     LOGIN / SIGN UP SECTION
-========================== -->
 
-<section class="auth-section" id="login">
 
-    <div class="auth-container">
+    <!-- =========================
+         SELL ITEM SECTION
+    ========================== -->
 
-        <!-- Login Side -->
+    <section class="sell-section"
+             id="sell">
 
-        <div class="auth-box">
 
-            <div class="auth-heading">
-
-                <p class="section-subtitle">
-                    WELCOME BACK
-                </p>
-
-                <h2>
-                    Login to CampusXchange
-                </h2>
-
-                <p>
-                    Login to manage your listings and
-                    connect with other students.
-                </p>
-
-            </div>
-
-
-            <form class="auth-form">
-
-                <!-- Email -->
-
-                <div class="form-group">
-
-                    <label for="login-email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="login-email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Password -->
-
-                <div class="form-group">
-
-                    <label for="login-password">
-                        Password
-                    </label>
-
-                    <input
-                        type="password"
-                        id="login-password"
-                        placeholder="Enter your password"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-options">
-
-                    <label class="remember-me">
-
-                        <input
-                            type="checkbox"
-                        >
-
-                        Remember me
-
-                    </label>
-
-                    <a href="#">
-                        Forgot Password?
-                    </a>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="auth-btn"
-                >
-                    Login
-                </button>
-
-            </form>
-
-
-            <p class="switch-auth">
-                Don't have an account?
-
-                <a href="#signup">
-                    Create Account
-                </a>
-            </p>
-
-        </div>
-
-
-        <!-- Sign Up Side -->
-
-        <div
-            class="auth-box signup-box"
-            id="signup"
-        >
-
-            <div class="auth-heading">
-
-                <p class="section-subtitle">
-                    JOIN OUR CAMPUS
-                </p>
-
-                <h2>
-                    Create an Account
-                </h2>
-
-                <p>
-                    Join CampusXchange and start
-                    buying, selling and exchanging items.
-                </p>
-
-            </div>
-
-
-            <form class="auth-form">
-
-                <!-- Name -->
-
-                <div class="form-group">
-
-                    <label for="signup-name">
-                        Full Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="signup-name"
-                        placeholder="Enter your full name"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Email -->
-
-                <div class="form-group">
-
-                    <label for="signup-email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="signup-email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- College -->
-
-                <div class="form-group">
-
-                    <label for="college">
-                        College / University
-                    </label>
-
-                    <input
-                        type="text"
-                        id="college"
-                        placeholder="Enter your college name"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Password -->
-
-                <div class="form-group">
-
-                    <label for="signup-password">
-                        Create Password
-                    </label>
-
-                    <input
-                        type="password"
-                        id="signup-password"
-                        placeholder="Create a password"
-                        required
-                    >
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="auth-btn"
-                >
-                    Create Account
-                </button>
-
-            </form>
-
-
-            <p class="switch-auth">
-                Already have an account?
-
-                <a href="#login">
-                    Login
-                </a>
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================
-     HOW IT WORKS
-========================== -->
-
-<section class="how-it-works" id="how-it-works">
-
-    <div class="section-heading">
-
-        <p class="section-subtitle">
-            SIMPLE & EASY
-        </p>
-
-        <h2>
-            How CampusXchange Works
-        </h2>
-
-        <p>
-            Buy, sell and exchange useful items
-            within your campus in just a few simple steps.
-        </p>
-
-    </div>
-
-
-    <div class="steps-container">
-
-
-        <!-- STEP 1 -->
-
-        <div class="step-card">
-
-            <div class="step-number">
-                01
-            </div>
-
-            <div class="step-icon">
-                🔍
-            </div>
-
-            <h3>
-                Discover
-            </h3>
-
-            <p>
-                Search and explore useful items
-                listed by students around your campus.
-            </p>
-
-        </div>
-
-
-        <!-- STEP 2 -->
-
-        <div class="step-card">
-
-            <div class="step-number">
-                02
-            </div>
-
-            <div class="step-icon">
-                🤝
-            </div>
-
-            <h3>
-                Connect
-            </h3>
-
-            <p>
-                Contact the seller and discuss
-                the product, price and meeting details.
-            </p>
-
-        </div>
-
-
-        <!-- STEP 3 -->
-
-        <div class="step-card">
-
-            <div class="step-number">
-                03
-            </div>
-
-            <div class="step-icon">
-                💰
-            </div>
-
-            <h3>
-                Exchange
-            </h3>
-
-            <p>
-                Meet safely on campus and complete
-                the purchase or exchange.
-            </p>
-
-        </div>
-
-
-        <!-- STEP 4 -->
-
-        <div class="step-card">
-
-            <div class="step-number">
-                04
-            </div>
-
-            <div class="step-icon">
-                ⭐
-            </div>
-
-            <h3>
-                Enjoy
-            </h3>
-
-            <p>
-                Save money, reduce waste and
-                make student life easier.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WHY CAMPUSXCHANGE
-========================== -->
-
-<section class="why-section" id="about">
-
-    <div class="why-container">
-
-
-        <!-- LEFT -->
-
-        <div class="why-content">
+        <div class="sell-header">
 
             <p class="section-subtitle">
-                WHY CAMPUSXCHANGE?
+                SELL WITH CAMPUSXCHANGE
             </p>
 
             <h2>
-                Built for Students,
-                <span>By Students.</span>
+                Sell Your Item
             </h2>
 
             <p>
-                CampusXchange is a student-focused marketplace
-                designed to make buying, selling and exchanging
-                items within a campus simple and affordable.
-            </p>
 
-            <p>
-                Instead of searching on different platforms,
-                students can find useful academic and everyday
-                items in one campus-focused community.
-            </p>
+                Have something you no longer need?
+                List it and help another student
+                find it.
 
-        </div>
-        <!-- RIGHT -->
-
-        <div class="benefits-container">
-
-
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    💸
-                </div>
-
-                <div>
-
-                    <h3>
-                        Affordable
-                    </h3>
-
-                    <p>
-                        Find useful products at
-                        student-friendly prices.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    🎓
-                </div>
-
-                <div>
-
-                    <h3>
-                        Campus Focused
-                    </h3>
-
-                    <p>
-                        Connect with students
-                        from your own campus.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    ♻️
-                </div>
-
-                <div>
-
-                    <h3>
-                        Sustainable
-                    </h3>
-
-                    <p>
-                        Give unused products a
-                        second life instead of wasting them.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    🔒
-                </div>
-
-                <div>
-
-                    <h3>
-                        Student Community
-                    </h3>
-
-                    <p>
-                        A platform designed around
-                        student needs and interactions.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     CAMPUSXCHANGE STATS
-========================== -->
-
-<section class="stats-section">
-
-    <div class="stats-container">
-
-        <div class="stat-card">
-
-            <h2>
-                100+
-            </h2>
-
-            <p>
-                Potential Listings
             </p>
 
         </div>
 
-        <div class="stat-card">
 
-            <h2>
-                50+
-            </h2>
 
-            <p>
-                Student Users
-            </p>
+        <div class="sell-form-container">
 
-        </div>
+            <form
+                class="sell-form"
+                id="sellForm">
 
-        <div class="stat-card">
 
-            <h2>
-                6+
-            </h2>
-
-            <p>
-                Product Categories
-            </p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h2>
-                24/7
-            </h2>
-
-            <p>
-                Platform Access
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================
-     CONTACT SECTION
-========================== -->
-
-<section class="contact-section" id="contact">
-
-    <div class="contact-heading">
-
-        <p class="section-subtitle">
-            GET IN TOUCH
-        </p>
-
-        <h2>
-            Contact CampusXchange
-        </h2>
-
-        <p>
-            Have a question, suggestion or feedback?
-            We'd love to hear from you.
-        </p>
-
-    </div>
-
-
-    <div class="contact-container">
-
-
-        <!-- Contact Information -->
-
-        <div class="contact-info">
-
-            <h3>
-                Let's Connect
-            </h3>
-
-            <p>
-                If you have any questions about buying,
-                selling or using CampusXchange,
-                feel free to contact us.
-            </p>
-
-
-            <div class="contact-item">
-
-                <div class="contact-icon">
-                    📧
-                </div>
-
-                <div>
-
-                    <span>
-                        Email
-                    </span>
-
-                    <strong>
-                        support@campusxchange.com
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <div class="contact-icon">
-                    📞
-                </div>
-
-                <div>
-
-                    <span>
-                        Phone
-                    </span>
-
-                    <strong>
-                        +91 98765 43210
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <div class="contact-icon">
-                    📍
-                </div>
-
-                <div>
-
-                    <span>
-                        Location
-                    </span>
-
-                    <strong>
-                        Your College Campus
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Contact Form -->
-
-        <div class="contact-form-container">
-
-            <form class="contact-form">
-
-                <div class="contact-row">
-
-                    <div class="form-group">
-
-                        <label for="contact-name">
-                            Your Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="contact-name"
-                            placeholder="Enter your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="contact-email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="contact-email"
-                            placeholder="Enter your email"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
+                <!-- PRODUCT NAME -->
 
                 <div class="form-group">
 
-                    <label for="contact-subject">
-                        Subject
+                    <label for="product-name">
+                        Product Name
                     </label>
 
                     <input
                         type="text"
-                        id="contact-subject"
-                        placeholder="Enter subject"
+                        id="product-name"
+                        placeholder="Enter product name"
                         required
                     >
 
                 </div>
 
 
+
+                <!-- CATEGORY -->
+
                 <div class="form-group">
 
-                    <label for="contact-message">
-                        Message
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select
+                        id="category"
+                        required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="books">
+                            Books
+                        </option>
+
+                        <option value="electronics">
+                            Electronics
+                        </option>
+
+                        <option value="calculator">
+                            Calculators
+                        </option>
+
+                        <option value="cycles">
+                            Cycles
+                        </option>
+
+                        <option value="accessories">
+                            Accessories
+                        </option>
+
+                        <option value="others">
+                            Others
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="form-group">
+
+                    <label for="price">
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Enter price in ₹"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CONDITION -->
+
+                <div class="form-group">
+
+                    <label for="condition">
+                        Product Condition
+                    </label>
+
+                    <select
+                        id="condition"
+                        required>
+
+                        <option value="">
+                            Select Condition
+                        </option>
+
+                        <option value="new">
+                            New
+                        </option>
+
+                        <option value="like-new">
+                            Like New
+                        </option>
+
+                        <option value="good">
+                            Good
+                        </option>
+
+                        <option value="used">
+                            Used
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SELLER NAME -->
+
+                <div class="form-group">
+
+                    <label for="seller">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="seller"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CONTACT -->
+
+                <div class="form-group">
+
+                    <label for="contact">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="contact"
+                        placeholder="Enter contact number"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group full-width">
+
+                    <label for="description">
+                        Product Description
                     </label>
 
                     <textarea
-                        id="contact-message"
+                        id="description"
                         rows="5"
-                        placeholder="Write your message..."
+                        placeholder="Describe your item..."
                         required
                     ></textarea>
 
                 </div>
 
 
-                <button
-                    type="submit"
-                    class="primary-btn contact-submit"
-                >
-                    Send Message →
-                </button>
+
+                <!-- IMAGE -->
+
+                <div class="form-group full-width">
+
+                    <label for="image">
+                        Product Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="image"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <div class="form-submit">
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        List My Item →
+
+                    </button>
+
+                </div>
 
             </form>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     FAQ SECTION
-========================== -->
 
-<section class="faq-section" id="faq">
+    <!-- =========================
+         PRODUCT DETAILS
+    ========================== -->
 
-    <div class="section-heading">
-
-        <p class="section-subtitle">
-            FAQ
-        </p>
-
-        <h2>
-            Frequently Asked Questions
-        </h2>
-
-        <p>
-            Here are some common questions about CampusXchange.
-        </p>
-
-    </div>
+    <section class="product-details"
+             id="details">
 
 
-    <div class="faq-container">
+        <div class="details-container">
 
 
-        <details class="faq-item">
+            <!-- IMAGE -->
 
-            <summary>
-                What is CampusXchange?
-            </summary>
+            <div class="details-image">
 
-            <p>
-                CampusXchange is a student-focused marketplace
-                where students can buy, sell and exchange
-                useful items within their campus community.
-            </p>
+                <div class="large-product-icon">
+                    📚
+                </div>
 
-        </details>
+                <button
+                    type="button"
+                    class="save-btn">
 
+                    ♡ Save Item
 
-        <details class="faq-item">
+                </button>
 
-            <summary>
-                What can I sell on CampusXchange?
-            </summary>
-
-            <p>
-                Students can list books, calculators,
-                electronics, cycles, accessories and
-                other useful college-related items.
-            </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-            <summary>
-                Is CampusXchange only for students?
-            </summary>
-
-            <p>
-                Yes. The platform is designed primarily
-                for students and campus communities.
-            </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-            <summary>
-                How do I contact a seller?
-            </summary>
-
-            <p>
-                Open the product details and use the
-                Contact Seller or Message Seller option.
-            </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-            <summary>
-                Is online payment available?
-            </summary>
-
-            <p>
-                Currently, CampusXchange focuses on connecting
-                students. Online payment can be integrated
-                in a future version.
-            </p>
-
-        </details>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================== -->
-
-<footer class="main-footer">
-
-    <div class="footer-container">
-
-
-        <!-- Brand -->
-
-        <div class="footer-brand">
-
-            <div class="footer-logo">
-                <span>Campus</span>Xchange
             </div>
 
-            <p>
-                Buy, sell and exchange useful items
-                within your campus community.
+
+
+            <!-- INFORMATION -->
+
+            <div class="details-info">
+
+                <span class="details-category">
+                    Books
+                </span>
+
+                <h2>
+                    Java DSA Complete Guide
+                </h2>
+
+                <div class="details-price">
+                    ₹350
+                </div>
+
+
+
+                <!-- CONDITION -->
+
+                <div class="condition-box">
+
+                    <span>
+                        Condition
+                    </span>
+
+                    <strong>
+                        Like New
+                    </strong>
+
+                </div>
+
+
+
+                <h3>
+                    About this item
+                </h3>
+
+                <p class="details-description">
+
+                    A useful Java and Data Structures
+                    book for engineering students.
+                    It contains concepts, examples
+                    and practice questions suitable
+                    for beginners.
+
+                </p>
+
+
+
+                <!-- SELLER -->
+
+                <div class="seller-card">
+
+                    <div class="seller-avatar">
+                        👤
+                    </div>
+
+                    <div class="seller-info">
+
+                        <span>
+                            Listed by
+                        </span>
+
+                        <strong>
+                            Student Seller
+                        </strong>
+
+                        <small>
+                            Engineering Student
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTACT BUTTONS -->
+
+                <div class="contact-buttons">
+
+                    <button
+                        type="button"
+                        class="contact-btn">
+
+                        📞 Contact Seller
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="message-btn">
+
+                        💬 Message Seller
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LOGIN / SIGN UP
+    ========================== -->
+
+    <section class="auth-section"
+             id="login">
+
+
+        <div class="auth-container">
+
+
+            <!-- LOGIN -->
+
+            <div class="auth-box">
+
+                <div class="auth-heading">
+
+                    <p class="section-subtitle">
+                        WELCOME BACK
+                    </p>
+
+                    <h2>
+                        Login to CampusXchange
+                    </h2>
+
+                    <p>
+
+                        Login to manage your listings
+                        and connect with other students.
+
+                    </p>
+
+                </div>
+
+
+
+                <form class="auth-form">
+
+
+                    <div class="form-group">
+
+                        <label for="login-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="login-password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                            >
+
+                            Remember me
+
+                        </label>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="auth-btn">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+
+
+                <p class="switch-auth">
+
+                    Don't have an account?
+
+                    <a href="#signup">
+                        Create Account
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- SIGN UP -->
+
+            <div
+                class="auth-box signup-box"
+                id="signup">
+
+
+                <div class="auth-heading">
+
+                    <p class="section-subtitle">
+                        JOIN OUR CAMPUS
+                    </p>
+
+                    <h2>
+                        Create an Account
+                    </h2>
+
+                    <p>
+
+                        Join CampusXchange and start
+                        buying, selling and exchanging items.
+
+                    </p>
+
+                </div>
+
+
+
+                <form class="auth-form">
+
+
+                    <div class="form-group">
+
+                        <label for="signup-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="signup-name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="signup-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="signup-email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="college">
+                            College / University
+                        </label>
+
+                        <input
+                            type="text"
+                            id="college"
+                            placeholder="Enter your college name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="signup-password">
+                            Create Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="signup-password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="auth-btn">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+
+
+                <p class="switch-auth">
+
+                    Already have an account?
+
+                    <a href="#login">
+                        Login
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
+
+    <section
+        class="how-it-works"
+        id="how-it-works">
+
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                SIMPLE & EASY
             </p>
+
+            <h2>
+                How CampusXchange Works
+            </h2>
+
+            <p>
+
+                Buy, sell and exchange useful items
+                within your campus in just a few
+                simple steps.
+
+            </p>
+
         </div>
 
 
-        <!-- Quick Links -->
-        <div class="footer-column">
-            <h3>
-                Quick Links
-            </h3>
-            <a href="#">
-                Home
-            </a>
-            <a href="#explore">
-                Explore
-            </a>
-            <a href="#categories">
-                Categories
-            </a>
-            <a href="#sell">
-                Sell Item
-            </a>
+
+        <div class="steps-container">
+
+
+            <!-- STEP 1 -->
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    Discover
+                </h3>
+
+                <p>
+
+                    Search and explore useful items
+                    listed by students around your campus.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Connect
+                </h3>
+
+                <p>
+
+                    Contact the seller and discuss
+                    the product, price and meeting details.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Exchange
+                </h3>
+
+                <p>
+
+                    Meet safely on campus and complete
+                    the purchase or exchange.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-icon">
+                    ⭐
+                </div>
+
+                <h3>
+                    Enjoy
+                </h3>
+
+                <p>
+
+                    Save money, reduce waste and
+                    make student life easier.
+
+                </p>
+
+            </div>
+
         </div>
 
-        <!-- Community -->
+    </section>
 
-        <div class="footer-column">
-            <h3>
-                Community
-            </h3>
-            <a href="#about">
-                About Us
-            </a>
-            <a href="#how-it-works">
-                How It Works
-            </a>
-            <a href="#faq">
+
+
+    <!-- =========================
+         WHY CAMPUSXCHANGE
+    ========================== -->
+
+    <section
+        class="why-section"
+        id="about">
+
+
+        <div class="why-container">
+
+
+            <!-- LEFT -->
+
+            <div class="why-content">
+
+                <p class="section-subtitle">
+                    WHY CAMPUSXCHANGE?
+                </p>
+
+                <h2>
+
+                    Built for Students,
+
+                    <span>
+                        By Students.
+                    </span>
+
+                </h2>
+
+                <p>
+
+                    CampusXchange is a student-focused
+                    marketplace designed to make buying,
+                    selling and exchanging items within
+                    a campus simple and affordable.
+
+                </p>
+
+                <p>
+
+                    Instead of searching on different
+                    platforms, students can find useful
+                    academic and everyday items in one
+                    campus-focused community.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="benefits-container">
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        💸
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Affordable
+                        </h3>
+
+                        <p>
+
+                            Find useful products at
+                            student-friendly prices.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Campus Focused
+                        </h3>
+
+                        <p>
+
+                            Connect with students
+                            from your own campus.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        ♻️
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Sustainable
+                        </h3>
+
+                        <p>
+
+                            Give unused products a
+                            second life instead of wasting them.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        🔒
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Student Community
+                        </h3>
+
+                        <p>
+
+                            A platform designed around
+                            student needs and interactions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <section class="stats-section">
+
+        <div class="stats-container">
+
+
+            <div class="stat-card">
+
+                <h2>
+                    100+
+                </h2>
+
+                <p>
+                    Potential Listings
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <h2>
+                    50+
+                </h2>
+
+                <p>
+                    Student Users
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <h2>
+                    6+
+                </h2>
+
+                <p>
+                    Product Categories
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <h2>
+                    24/7
+                </h2>
+
+                <p>
+                    Platform Access
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section
+        class="contact-section"
+        id="contact">
+
+
+        <div class="contact-heading">
+
+            <p class="section-subtitle">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Contact CampusXchange
+            </h2>
+
+            <p>
+
+                Have a question, suggestion or feedback?
+                We'd love to hear from you.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-container">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Let's Connect
+                </h3>
+
+                <p>
+
+                    If you have any questions about buying,
+                    selling or using CampusXchange,
+                    feel free to contact us.
+
+                </p>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Email
+                        </span>
+
+                        <strong>
+                            support@campusxchange.com
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Phone
+                        </span>
+
+                        <strong>
+                            +91 98765 43210
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Location
+                        </span>
+
+                        <strong>
+                            Your College Campus
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form-container">
+
+                <form class="contact-form">
+
+
+                    <div class="contact-row">
+
+
+                        <div class="form-group">
+
+                            <label for="contact-name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="contact-email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="contact-subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-subject"
+                            placeholder="Enter subject"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="contact-message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn contact-submit">
+
+                        Send Message →
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FAQ
+    ========================== -->
+
+    <section
+        class="faq-section"
+        id="faq">
+
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
                 FAQ
-            </a>
-            <a href="#contact">
-                Contact
-            </a>
+            </p>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <p>
+
+                Here are some common questions
+                about CampusXchange.
+
+            </p>
+
         </div>
 
-        <!-- Social -->
-        <div class="footer-column">
 
-            <h3>
-                Follow Us
-            </h3>
-            <a href="#">
-                Instagram
-            </a>
-            <a href="#">
-                LinkedIn
-            </a>
-            <a href="#">
-                GitHub
-            </a>
+
+        <div class="faq-container">
+
+
+            <details class="faq-item">
+
+                <summary>
+                    What is CampusXchange?
+                </summary>
+
+                <p>
+
+                    CampusXchange is a student-focused
+                    marketplace where students can buy,
+                    sell and exchange useful items within
+                    their campus community.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="faq-item">
+
+                <summary>
+                    What can I sell on CampusXchange?
+                </summary>
+
+                <p>
+
+                    Students can list books, calculators,
+                    electronics, cycles, accessories and
+                    other useful college-related items.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Is CampusXchange only for students?
+                </summary>
+
+                <p>
+
+                    Yes. The platform is designed primarily
+                    for students and campus communities.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="faq-item">
+
+                <summary>
+                    How do I contact a seller?
+                </summary>
+
+                <p>
+
+                    Open the product details and use the
+                    Contact Seller or Message Seller option.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Is online payment available?
+                </summary>
+
+                <p>
+
+                    Currently, CampusXchange focuses on
+                    connecting students. Online payment can
+                    be integrated in a future version.
+
+                </p>
+
+            </details>
+
         </div>
-    </div>
-    <div class="footer-bottom">
 
-        <p>
-            © 2026 CampusXchange. All Rights Reserved.
-        </p>
+    </section>
 
-        <p>
-            Built for Students 🎓
-        </p>
-    </div>
-  </footer>
-    <footer>
 
-        <p>
-            © 2026 CampusXchange | Student Marketplace
-        </p>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="main-footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <span>
+                        Campus
+                    </span>Xchange
+
+                </div>
+
+                <p>
+
+                    Buy, sell and exchange useful items
+                    within your campus community.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#explore">
+                    Explore
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#sell">
+                    Sell Item
+                </a>
+
+            </div>
+
+
+
+            <!-- COMMUNITY -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Community
+                </h3>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- SOCIAL -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+                <a href="#">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CampusXchange.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Built for Students 🎓
+            </p>
+
+        </div>
 
     </footer>
-
-
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="script.js"></script>
 </body>
 
 </html>
