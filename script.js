@@ -1,11 +1,6 @@
-// =========================================
-// CAMPUSXCHANGE SEARCH & FILTER
-// =========================================
+/* CAMPUSXCHANGE SEARCH & FILTER */
 
-
-// =========================================
-// GET HTML ELEMENTS
-// =========================================
+/* GET HTML ELEMENTS */
 
 const searchInput =
     document.getElementById("searchInput");
@@ -26,9 +21,7 @@ const productContainer =
     document.querySelector(".product-container");
 
 
-// =========================================
-// FILTER PRODUCTS
-// =========================================
+/* FILTER PRODUCTS */
 
 function filterProducts() {
 
@@ -42,13 +35,8 @@ function filterProducts() {
 
     let visibleProducts = 0;
 
-
-    // Get current products
     const currentProducts =
-        document.querySelectorAll(
-            ".product-card"
-        );
-
+        document.querySelectorAll(".product-card");
 
     currentProducts.forEach(function(card) {
 
@@ -61,26 +49,19 @@ function filterProducts() {
         const productCategory =
             card.dataset.category;
 
-
-        // Search match
         const matchesSearch =
             productName.includes(searchText);
 
-
-        // Category match
         const matchesCategory =
             selectedCategory === "all" ||
             productCategory === selectedCategory;
 
-
-        // Show / Hide
         if (
             matchesSearch &&
             matchesCategory
         ) {
 
             card.style.display = "";
-
             visibleProducts++;
 
         } else {
@@ -91,16 +72,13 @@ function filterProducts() {
 
     });
 
-
     resultCount.textContent =
         `Showing ${visibleProducts} product(s)`;
 
 }
 
 
-// =========================================
-// SEARCH EVENT
-// =========================================
+/* SEARCH EVENT */
 
 searchInput.addEventListener(
     "input",
@@ -108,9 +86,7 @@ searchInput.addEventListener(
 );
 
 
-// =========================================
-// CATEGORY EVENT
-// =========================================
+/* CATEGORY EVENT */
 
 categoryFilter.addEventListener(
     "change",
@@ -118,16 +94,13 @@ categoryFilter.addEventListener(
 );
 
 
-// =========================================
-// RESET FILTER
-// =========================================
+/* RESET FILTER */
 
 resetFilter.addEventListener(
     "click",
     function() {
 
         searchInput.value = "";
-
         categoryFilter.value = "all";
 
         filterProducts();
@@ -136,9 +109,7 @@ resetFilter.addEventListener(
 );
 
 
-// =========================================
-// UPDATE PRODUCT COUNT
-// =========================================
+/* UPDATE PRODUCT COUNT */
 
 function updateProductCount() {
 
@@ -147,16 +118,13 @@ function updateProductCount() {
             ".product-card"
         ).length;
 
-
     resultCount.textContent =
         `Showing ${totalProducts} product(s)`;
 
 }
 
 
-// =========================================
-// SELL ITEM FORM
-// =========================================
+/* SELL ITEM FORM */
 
 sellForm.addEventListener(
     "submit",
@@ -165,33 +133,37 @@ sellForm.addEventListener(
         event.preventDefault();
 
 
-        // =====================================
-        // GET FORM VALUES
-        // =====================================
+        /* GET FORM VALUES */
 
         const productName =
             document.getElementById(
                 "product-name"
             ).value.trim();
 
-
         const category =
             document.getElementById(
                 "category"
             ).value;
-
 
         const price =
             document.getElementById(
                 "price"
             ).value;
 
-
         const condition =
             document.getElementById(
                 "condition"
             ).value;
 
+        const seller =
+            document.getElementById(
+                "seller"
+            ).value.trim();
+
+        const contact =
+            document.getElementById(
+                "contact"
+            ).value.trim();
 
         const description =
             document.getElementById(
@@ -199,15 +171,15 @@ sellForm.addEventListener(
             ).value.trim();
 
 
-        // =====================================
-        // VALIDATION
-        // =====================================
+        /* VALIDATION */
 
         if (
             productName === "" ||
             category === "" ||
             price === "" ||
             condition === "" ||
+            seller === "" ||
+            contact === "" ||
             description === ""
         ) {
 
@@ -220,13 +192,10 @@ sellForm.addEventListener(
         }
 
 
-        // =====================================
-        // CREATE PRODUCT CARD
-        // =====================================
+        /* CREATE PRODUCT CARD */
 
         const productCard =
             document.createElement("div");
-
 
         productCard.classList.add(
             "product-card",
@@ -234,9 +203,25 @@ sellForm.addEventListener(
         );
 
 
+        /* STORE PRODUCT DATA */
+
         productCard.dataset.category =
             category;
 
+        productCard.dataset.condition =
+            condition;
+
+        productCard.dataset.seller =
+            seller;
+
+        productCard.dataset.contact =
+            contact;
+
+        productCard.dataset.image =
+            "📦";
+
+
+        /* PRODUCT CARD HTML */
 
         productCard.innerHTML = `
 
@@ -275,41 +260,38 @@ sellForm.addEventListener(
         `;
 
 
-        // =====================================
-        // ADD PRODUCT TO PAGE
-        // =====================================
+        /* ADD PRODUCT TO PAGE */
 
         productContainer.appendChild(
             productCard
         );
 
 
-        // =====================================
-        // SAVE PRODUCT
-        // =====================================
+        /* SAVE PRODUCT */
 
         saveProducts();
 
 
-        // =====================================
-        // RESET FORM
-        // =====================================
+        /* ADD VIEW DETAILS EVENT */
+
+        attachViewDetailsEvent(
+            productCard
+        );
+
+
+        /* RESET FORM */
 
         sellForm.reset();
 
 
-        // =====================================
-        // SUCCESS MESSAGE
-        // =====================================
+        /* SUCCESS MESSAGE */
 
         alert(
             "Your item has been listed successfully! 🎉"
         );
 
 
-        // =====================================
-        // UPDATE COUNT
-        // =====================================
+        /* UPDATE COUNT */
 
         updateProductCount();
 
@@ -317,9 +299,7 @@ sellForm.addEventListener(
 );
 
 
-// =========================================
-// SAVE USER PRODUCTS
-// =========================================
+/* SAVE USER PRODUCTS */
 
 function saveProducts() {
 
@@ -327,7 +307,6 @@ function saveProducts() {
         document.querySelectorAll(
             ".product-card.user-product"
         );
-
 
     const productData = [];
 
@@ -344,6 +323,18 @@ function saveProducts() {
             category:
                 card.dataset.category,
 
+            condition:
+                card.dataset.condition,
+
+            seller:
+                card.dataset.seller,
+
+            contact:
+                card.dataset.contact,
+
+            image:
+                card.dataset.image,
+
             description:
                 card.querySelector(
                     ".product-info p"
@@ -355,7 +346,6 @@ function saveProducts() {
                 ).textContent.trim()
 
         };
-
 
         productData.push(product);
 
@@ -370,9 +360,7 @@ function saveProducts() {
 }
 
 
-// =========================================
-// LOAD PRODUCTS
-// =========================================
+/* LOAD PRODUCTS */
 
 function loadProducts() {
 
@@ -402,9 +390,7 @@ function loadProducts() {
 }
 
 
-// =========================================
-// CREATE PRODUCT CARD
-// =========================================
+/* CREATE PRODUCT CARD */
 
 function createProductCard(product) {
 
@@ -421,11 +407,23 @@ function createProductCard(product) {
     productCard.dataset.category =
         product.category;
 
+    productCard.dataset.condition =
+        product.condition || "Good";
+
+    productCard.dataset.seller =
+        product.seller || "Student Seller";
+
+    productCard.dataset.contact =
+        product.contact || "";
+
+    productCard.dataset.image =
+        product.image || "📦";
+
 
     productCard.innerHTML = `
 
         <div class="product-image">
-            📦
+            ${product.image || "📦"}
         </div>
 
         <div class="product-info">
@@ -463,18 +461,164 @@ function createProductCard(product) {
         productCard
     );
 
+
+    /* ATTACH VIEW DETAILS */
+
+    attachViewDetailsEvent(
+        productCard
+    );
+
 }
 
 
-// =========================================
-// LOAD SAVED PRODUCTS
-// =========================================
+/* PRODUCT DETAILS ELEMENTS */
+
+const detailsSection =
+    document.getElementById("details");
+
+const detailsImage =
+    document.getElementById("detailsImage");
+
+const detailsCategory =
+    document.getElementById("detailsCategory");
+
+const detailsName =
+    document.getElementById("detailsName");
+
+const detailsPrice =
+    document.getElementById("detailsPrice");
+
+const detailsCondition =
+    document.getElementById("detailsCondition");
+
+const detailsDescription =
+    document.getElementById("detailsDescription");
+
+const detailsSeller =
+    document.getElementById("detailsSeller");
+
+
+/* SHOW PRODUCT DETAILS */
+
+function showProductDetails(card) {
+
+    const productName =
+        card.querySelector(
+            "h3"
+        ).textContent.trim();
+
+    const productCategory =
+        card.dataset.category;
+
+    const productPrice =
+        card.querySelector(
+            ".product-bottom strong"
+        ).textContent.trim();
+
+    const productDescription =
+        card.querySelector(
+            ".product-info p"
+        ).textContent.trim();
+
+    const productCondition =
+        card.dataset.condition ||
+        "Good";
+
+    const productSeller =
+        card.dataset.seller ||
+        "Student Seller";
+
+    const productImage =
+        card.dataset.image ||
+        "📦";
+
+
+    /* UPDATE DETAILS */
+
+    detailsImage.textContent =
+        productImage;
+
+    detailsCategory.textContent =
+        productCategory;
+
+    detailsName.textContent =
+        productName;
+
+    detailsPrice.textContent =
+        productPrice;
+
+    detailsCondition.textContent =
+        productCondition;
+
+    detailsDescription.textContent =
+        productDescription;
+
+    detailsSeller.textContent =
+        productSeller;
+
+
+    /* SCROLL TO DETAILS */
+
+    detailsSection.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+
+/* ATTACH VIEW DETAILS EVENT */
+
+function attachViewDetailsEvent(card) {
+
+    const button =
+        card.querySelector(
+            ".product-bottom button"
+        );
+
+
+    if (!button) {
+        return;
+    }
+
+
+    button.onclick = function() {
+
+        showProductDetails(card);
+
+    };
+
+}
+
+
+/* ATTACH EVENTS TO EXISTING PRODUCTS */
+
+function attachViewDetailsEvents() {
+
+    const cards =
+        document.querySelectorAll(
+            ".product-card"
+        );
+
+
+    cards.forEach(function(card) {
+
+        attachViewDetailsEvent(card);
+
+    });
+
+}
+
+
+/* LOAD SAVED PRODUCTS */
 
 loadProducts();
 
 
-// =========================================
-// INITIAL PRODUCT COUNT
-// =========================================
+/* ATTACH EXISTING PRODUCT EVENTS */
+
+attachViewDetailsEvents();
+
+
+/* INITIAL PRODUCT COUNT */
 
 updateProductCount();
